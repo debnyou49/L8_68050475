@@ -1,0 +1,140 @@
+/* ตัวแปรสีสไตล์ Spotify */
+        :root {
+            --spotify-green: #1DB954;
+            --spotify-green-hover: #1ed760;
+            --spotify-black: #121212;
+            --spotify-card: #181818;
+            --spotify-card-hover: #282828;
+            --spotify-text-gray: #b3b3b3;
+        }
+
+        /* ตั้งค่าพื้นหลังและฟอนต์พื้นฐาน */
+        body {
+            background-color: var(--spotify-black);
+            color: #ffffff;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        /* ตกแต่ง Navbar */
+        .navbar {
+            background-color: #000000 !important; /* ดำสนิท */
+            padding: 15px 0;
+        }
+        .navbar-brand {
+            color: var(--spotify-green) !important;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .nav-link {
+            color: var(--spotify-text-gray) !important;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: #ffffff !important;
+        }
+
+        /* ตกแต่งแบนเนอร์ (Banner) */
+        .banner {
+            background: linear-gradient(180deg, rgba(29,185,84,0.3) 0%, rgba(18,18,18,1) 100%);
+            padding: 120px 0 80px 0;
+            text-align: center;
+        }
+        .banner h1 {
+            font-weight: 900;
+            letter-spacing: -1px;
+            font-size: 3.5rem;
+        }
+        .banner p {
+            color: var(--spotify-text-gray);
+        }
+
+        /* ตกแต่ง Card บริการ */
+        .spotify-card {
+            background-color: var(--spotify-card);
+            border: none;
+            border-radius: 8px;
+            padding: 15px;
+            transition: background-color 0.3s ease;
+            height: 100%;
+        }
+        .spotify-card:hover {
+            background-color: var(--spotify-card-hover);
+        }
+        .spotify-card img {
+            border-radius: 6px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+            margin-bottom: 15px;
+        }
+        .spotify-card .card-title {
+            color: #ffffff;
+            font-weight: 700;
+        }
+        .spotify-card .card-text {
+            color: var(--spotify-text-gray);
+            font-size: 0.9rem;
+        }
+
+        /* ปุ่มสไตล์ Spotify (แคปซูล) */
+        .btn-spotify {
+            background-color: var(--spotify-green);
+            color: #000000;
+            border-radius: 500px;
+            font-weight: 700;
+            padding: 10px 32px;
+            border: none;
+            transition: transform 0.1s, background-color 0.2s;
+        }
+        .btn-spotify:hover {
+            background-color: var(--spotify-green-hover);
+            color: #000000;
+            transform: scale(1.04);
+        }
+
+        /* ตกแต่ง Footer */
+        .custom-footer {
+            background-color: #000000;
+            padding: 60px 0 30px 0;
+            margin-top: 50px;
+        }
+        .custom-footer p, .custom-footer small {
+            color: var(--spotify-text-gray);
+        }
+        .custom-footer a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.5rem;
+            transition: color 0.2s;
+        }
+        .custom-footer a:hover {
+            color: var(--spotify-green);
+        }
+
+        /* ตกแต่ง Modal ให้เป็น Dark Mode */
+        .modal-content {
+            background-color: #282828;
+            color: #ffffff;
+            border-radius: 8px;
+            border: none;
+        }
+        .modal-header {
+            border-bottom: 1px solid #3e3e3e;
+        }
+        .modal-footer {
+            border-top: 1px solid #3e3e3e;
+        }
+        .form-control {
+            background-color: #3e3e3e;
+            border: 1px solid #555;
+            color: #fff;
+        }
+        .form-control:focus {
+            background-color: #3e3e3e;
+            color: #fff;
+            border-color: var(--spotify-green);
+            box-shadow: none;
+        }
+        .form-control::placeholder {
+            color: #a0a0a0;
+        }
