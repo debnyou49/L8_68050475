@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debnyou - Spotify Theme</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top" style="background-color: #000000;">
+    <div class="container">
+        <a href="#" class="navbar-brand fw-bold" style="color: #1DB954;">
+            <i class="bi bi-spotify"></i> Debnyou
+        </a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#spotifyNavbar" aria-controls="spotifyNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="spotifyNavbar">
+            <ul class="navbar-nav ms-auto text-center"> <li class="nav-item">
+                    <a href="#" class="nav-link active">หน้าแรก</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">บริการ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">เกี่ยวกับเรา</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#myModal" class="nav-link" data-bs-toggle="modal" style="color: #1DB954 !important;">ติดต่อเรา</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <header class="banner">
+        <div class="container">
+            <h1>Music is Everything</h1>
+            <p class="lead mt-3 fs-5">ผลิตและสร้างสรรค์ผลงานเพลงแบบครบวงจรระดับมืออาชีพ</p>
+            <button class="btn btn-spotify mt-4 mt-2">เริ่มต้นใช้งานเลย</button>
+        </div>
+    </header>
+
+    <section id="services" class="container mt-4 mb-5">
+        <h3 class="fw-bold mb-4">บริการที่คุณอาจสนใจ</h3>
+        <div class="row g-4">
+            
+            <div class="col-md-4">
+                <div class="card spotify-card">
+                    <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Music Production">
+                    <div class="card-body p-0">
+                        <h5 class="card-title mt-2">Music Production</h5>
+                        <p class="card-text mb-4">รับทำบีท แต่งเมโลดี้ และเรียบเรียงเสียงประสาน ทุกแนวเพลงตามที่คุณต้องการโดยโปรดิวเซอร์ผู้เชี่ยวชาญ</p>
+                        <button class="btn btn-spotify w-100">ดูข้อมูลเพิ่มเติม</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card spotify-card">
+                    <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/blogs/2147484495/images/xu2z3eSNQBaFYXctOVTw_How_To_Mix_Songs_with_a_DAW_-_LEVELS_Music_Production_-_Ableton_FL_Studio_Pro_Tools.png" class="card-img-top" alt="Mixing & Mastering">
+                    <div class="card-body p-0">
+                        <h5 class="card-title mt-2">Mixing & Mastering</h5>
+                        <p class="card-text mb-4">ปรับแต่งมิติเสียงเพลงของคุณให้ใส คมชัด และได้มาตรฐานระดับสากล พร้อมสำหรับการสตรีมมิ่งทุกแพลตฟอร์ม</p>
+                        <button class="btn btn-spotify w-100">ดูข้อมูลเพิ่มเติม</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card spotify-card">
+                    <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Vocal Recording">
+                    <div class="card-body p-0">
+                        <h5 class="card-title mt-2">Vocal Recording</h5>
+                        <p class="card-text mb-4">บริการห้องอัดเสียงคุณภาพสูง อุปกรณ์มาตรฐานระดับโลก พร้อม Sound Engineer คอยให้คำแนะนำตลอดการอัด</p>
+                        <button class="btn btn-spotify w-100">ดูข้อมูลเพิ่มเติม</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="about" class="custom-footer text-center">
+        <div class="container">
+            <h5 class="fw-bold mb-4 text-white">Debnyou</h5>
+            <div class="row text-start justify-content-center mb-4 text-center">
+                <div class="col-md-8">
+                    <p class="mb-2"><i class="bi bi-envelope"></i> contact@debnyou.com</p>
+                    <p class="mb-2"><i class="bi bi-telephone"></i> 092-479-8992</p>
+                    <p class="mb-2"><i class="bi bi-geo-alt"></i> พหลโยธิน 30</p>
+                </div>
+            </div>
+            
+            <div class="mt-4 mb-4">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+            </div>
+            <p class="mt-4 mb-0"><small>&copy; 2026 Debnyou. All Rights Reserved.</small></p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="myModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">เสนอหัวข้องานของคุณ</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nameInput" class="form-label text-white">ชื่อ-นามสกุล</label>
+                            <input type="text" class="form-control" id="nameInput" placeholder="ระบุชื่อของคุณ">
+                        </div>
+                        <div class="mb-3">
+                            <label for="detailInput" class="form-label text-white">รายละเอียดงานเพลงที่ต้องการ</label>
+                            <textarea class="form-control" id="detailInput" rows="5" placeholder="พิมพ์รายละเอียดแนวเพลง..."></textarea>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ยกเลิก</button>
+    <button type="button" id="btnSubmit" class="btn btn-spotify text-black">ส่งแบบฟอร์ม</button>
+</div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // 1. รอให้หน้าจอโหลดเสร็จก่อน
+    document.addEventListener('DOMContentLoaded', function() {
+        
+        // 2. อ้างอิงไปที่ปุ่มส่ง
+        const submitBtn = document.getElementById('btnSubmit');
+        
+        // 3. เมื่อมีการคลิกปุ่ม
+        submitBtn.addEventListener('click', function() {
+            // แสดงหน้าต่างแจ้งเตือน
+            alert('ส่งข้อมูลสำเร็จ! ทีมงานจะติดต่อกลับไปโดยเร็วที่สุด');
+
+            // สั่งปิด Modal (อ้างอิงตาม id "myModal" ที่ตั้งไว้ในตัวอย่างก่อนหน้า)
+            const myModalEl = document.getElementById('myModal');
+            const modal = bootstrap.Modal.getInstance(myModalEl);
+            if (modal) {
+                modal.hide();
+            }
+
+            // ล้างข้อมูลในฟอร์ม (Optional)
+            document.getElementById('nameInput').value = '';
+            document.getElementById('detailInput').value = '';
+        });
+    });
+</script>
+</body>
+</html>
